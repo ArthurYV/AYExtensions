@@ -17,6 +17,13 @@ extension String {
         return ArraySlice(self.characters)
     }
     
+    /**
+     Cut the string from start to the target string,not included the target string.
+     
+     - parameter targetStr: the target Stirng.
+     
+     - returns: A new sub string, or nil if an error occurs.
+     */
     func cutStringWithStr(targetStr:String) -> String? {
         let range: Range<String.Index>? = self.rangeOfString(targetStr)
         if let unWrappedRange = range{

@@ -28,12 +28,11 @@ func maskWithColor(color: UIColor,image:UIImage) -> UIImage? {
     }
 }
 
-
 let demoImage = UIImage.init(named: "lock")
 
-maskWithColor(UIColor.redColor(),image: demoImage!)
+let newImage = maskWithColor(UIColor.redColor(),image: demoImage!)
 
-let demoImageView = UIImageView(image: demoImage)
+let demoImageView = UIImageView(image: newImage)
 demoImageView.frame = CGRect(x: 0,y: 0,width: 100,height: 100)
 
 
