@@ -29,6 +29,7 @@
 		887EF59D1D727616004F68CB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		887EF5A41D72766B004F68CB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		887EF5A61D727BB6004F68CB /* ArraySlice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArraySlice+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		887EF5A81D741AF6004F68CB /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		887EF5911D727616004F68CB = {
 			isa = PBXGroup;
 			children = (
+				887EF5D41D74204A004F68CB /* Demo */,
 				887EF59C1D727616004F68CB /* AYExtensions */,
 				887EF59B1D727616004F68CB /* Products */,
 			);
@@ -66,6 +68,14 @@
 				887EF5A61D727BB6004F68CB /* ArraySlice+Extension.swift */,
 			);
 			path = AYExtensions;
+			sourceTree = "<group>";
+		};
+		887EF5D41D74204A004F68CB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				887EF5A81D741AF6004F68CB /* Demo.playground */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +259,7 @@
 				887EF5A31D727616004F68CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
