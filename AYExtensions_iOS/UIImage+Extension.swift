@@ -51,10 +51,10 @@ extension UIImage {
     func clip(rect: CGRect) -> UIImage {
         
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
-        
         drawAtPoint(CGPoint(x: -rect.origin.x, y: -rect.origin.y))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
+        
     }
 }

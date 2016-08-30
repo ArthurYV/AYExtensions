@@ -13,6 +13,8 @@
 		887EF5D31D742039004F68CB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D21D742039004F68CB /* UIImage+Extension.swift */; };
 		887EF5D91D7521D0004F68CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D81D7521CF004F68CB /* UIView+Extension.swift */; };
 		887EF5DA1D7521D0004F68CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D81D7521CF004F68CB /* UIView+Extension.swift */; };
+		887EF5DC1D752736004F68CB /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5DB1D752736004F68CB /* UIButton+Extension.swift */; };
+		887EF5DD1D752736004F68CB /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5DB1D752736004F68CB /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 		887EF5D21D742039004F68CB /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		887EF5D61D742074004F68CB /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
 		887EF5D81D7521CF004F68CB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		887EF5DB1D752736004F68CB /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			children = (
 				887EF5D21D742039004F68CB /* UIImage+Extension.swift */,
 				887EF5D81D7521CF004F68CB /* UIView+Extension.swift */,
+				887EF5DB1D752736004F68CB /* UIButton+Extension.swift */,
 			);
 			name = AYExrensions;
 			sourceTree = "<group>";
@@ -221,6 +225,7 @@
 			files = (
 				887EF5D91D7521D0004F68CB /* UIView+Extension.swift in Sources */,
 				887EF5D31D742039004F68CB /* UIImage+Extension.swift in Sources */,
+				887EF5DC1D752736004F68CB /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +235,7 @@
 			files = (
 				887EF5DA1D7521D0004F68CB /* UIView+Extension.swift in Sources */,
 				887EF5C71D741F6B004F68CB /* AYExtensions_iOSTests.swift in Sources */,
+				887EF5DD1D752736004F68CB /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #endif
 
 extension String {
+    
     var slice: ArraySlice<Character> {
         return ArraySlice(self.characters)
     }
