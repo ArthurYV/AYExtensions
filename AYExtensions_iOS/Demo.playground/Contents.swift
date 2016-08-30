@@ -2,38 +2,22 @@
 
 import UIKit
 
-func maskWithColor(color: UIColor,image:UIImage) -> UIImage? {
+func toImage(size: CGSize,view: UIView) -> UIImage {
     
-    let maskImage = image.CGImage
-    let width = image.size.width
-    let height = image.size.height
-    let bounds = CGRectMake(0, 0, width, height)
+    UIGraphicsBeginImageContextWithOptions(size, true, 0)
+    let ctx = UIGraphicsGetCurrentContext()
     
-    let colorSpace = CGColorSpaceCreateDeviceRGB()
-    let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.PremultipliedLast.rawValue)
-    let bitmapContext = CGBitmapContextCreate(nil, Int(width), Int(height), 8, 0, colorSpace, bitmapInfo.rawValue) //needs rawValue of bitmapInfo
+    CGContextSaveGState(ctx)
+    view.layer.renderInContext(ctx!)
+    let img = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
     
-    CGContextClipToMask(bitmapContext, bounds, maskImage)
-    CGContextSetFillColorWithColor(bitmapContext, color.CGColor)
-    CGContextFillRect(bitmapContext, bounds)
-    
-    //is it nil?
-    if let cImage = CGBitmapContextCreateImage(bitmapContext) {
-        let coloredImage = UIImage(CGImage: cImage)
-        
-        return coloredImage
-        
-    } else {
-        return nil
-    }
+    return img
 }
 
-let demoImage = UIImage.init(named: "lock")
+let demoView = UIView.init(frame: CGRect(x: 0,y: 0,width: 100,height: 100))
+demoView.backgroundColor = UIColor.redColor()
 
-let newImage = maskWithColor(UIColor.redColor(),image: demoImage!)
+let image = toImage(CGSize(width: 50,height: 50), view: demoView)
+let demoImageView = UIImageView.init(image: image)
 
-let demoImageView = UIImageView(image: newImage)
-demoImageView.frame = CGRect(x: 0,y: 0,width: 100,height: 100)
-
-
-//change image color

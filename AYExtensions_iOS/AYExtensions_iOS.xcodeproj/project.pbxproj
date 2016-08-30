@@ -11,6 +11,8 @@
 		887EF5C21D741F6B004F68CB /* AYExtensions_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887EF5B71D741F6B004F68CB /* AYExtensions_iOS.framework */; };
 		887EF5C71D741F6B004F68CB /* AYExtensions_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5C61D741F6B004F68CB /* AYExtensions_iOSTests.swift */; };
 		887EF5D31D742039004F68CB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D21D742039004F68CB /* UIImage+Extension.swift */; };
+		887EF5D91D7521D0004F68CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D81D7521CF004F68CB /* UIView+Extension.swift */; };
+		887EF5DA1D7521D0004F68CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887EF5D81D7521CF004F68CB /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		887EF5C81D741F6B004F68CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		887EF5D21D742039004F68CB /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		887EF5D61D742074004F68CB /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
+		887EF5D81D7521CF004F68CB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				887EF5D21D742039004F68CB /* UIImage+Extension.swift */,
+				887EF5D81D7521CF004F68CB /* UIView+Extension.swift */,
 			);
 			name = AYExrensions;
 			sourceTree = "<group>";
@@ -215,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887EF5D91D7521D0004F68CB /* UIView+Extension.swift in Sources */,
 				887EF5D31D742039004F68CB /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887EF5DA1D7521D0004F68CB /* UIView+Extension.swift in Sources */,
 				887EF5C71D741F6B004F68CB /* AYExtensions_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
