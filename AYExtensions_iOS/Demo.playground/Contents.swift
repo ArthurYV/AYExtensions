@@ -2,22 +2,16 @@
 
 import UIKit
 
-func toImage(size: CGSize,view: UIView) -> UIImage {
+func clip(rect: CGRect,image: UIImage) -> UIImage {
     
-    UIGraphicsBeginImageContextWithOptions(size, true, 0)
-    let ctx = UIGraphicsGetCurrentContext()
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
     
-    CGContextSaveGState(ctx)
-    view.layer.renderInContext(ctx!)
-    let img = UIGraphicsGetImageFromCurrentImageContext()
+    image.drawAtPoint(CGPoint(x: -rect.origin.x, y: -rect.origin.y))
+    let image = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
-    
-    return img
+    return image
 }
 
-let demoView = UIView.init(frame: CGRect(x: 0,y: 0,width: 100,height: 100))
-demoView.backgroundColor = UIColor.redColor()
-
-let image = toImage(CGSize(width: 50,height: 50), view: demoView)
-let demoImageView = UIImageView.init(image: image)
+let demoImageView = UIImageView.init(image: UIImage.init(named: "loli2"))
+let image = clip(CGRect(x: 10,y: 10,width: 200,height: 200), image: demoImageView.image!)
 

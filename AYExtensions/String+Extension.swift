@@ -17,6 +17,16 @@ extension String {
         return ArraySlice(self.characters)
     }
     
+    var securityString: String {
+        
+        let length = self.characters.count
+        let securityLength = (length + 1) / 2
+        let star = [String](count: securityLength, repeatedValue: "*").joinWithSeparator("")
+        let start = self.startIndex.advancedBy(securityLength / 2)
+        let range = start ..< start.advancedBy(securityLength)
+        return stringByReplacingCharactersInRange(range, withString: star)
+    }
+    
     /**
      Cut the string from start to the target string,not included the target string.
      
@@ -34,6 +44,6 @@ extension String {
         }else{
             return nil
         }
-        
     }
+    
 }

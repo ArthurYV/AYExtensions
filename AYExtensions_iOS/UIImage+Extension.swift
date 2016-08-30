@@ -40,4 +40,21 @@ extension UIImage {
             return nil
         } 
     }
+    
+    /**
+     Clip the image with the given rect.
+     
+     - parameter rect: The rect you use to clip the image.
+     
+     - returns: Return a new image object.
+     */
+    func clip(rect: CGRect) -> UIImage {
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
+        
+        drawAtPoint(CGPoint(x: -rect.origin.x, y: -rect.origin.y))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
 }
